@@ -9,6 +9,7 @@ body {
   .fullBackground {
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
     opacity:0.15;
     top: 0;
