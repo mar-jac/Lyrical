@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML basics</title>
+        <link href="css/styles.css" rel="stylesheet"/> 
+        <link href="css/box.css" rel="stylesheet"/> 
+        <link href="css/wrapper.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="javascript/fullclip.js"></script>
+    </head>
+    <body>
+    <!-- This is a comment -->
+    <section>
+        <h1 class="popout">
+            <span>LYRICAL</span>
+        </h1>
+    </section>
+     <section>
+      <div class="fullBackground"></div>
+      <h3 class="caption">Every word of a song counts.</h3>
+      <img style="opacity: 0.6; position: relative; right: -300px; 
+      bottom: 170px; WIDTH:800px; HEIGHT:600px"src="img/wordmap.png">
+        <div class="timeline">
+            <div class="container left">
+              <div class="left">
+                <h2>2019 - The Idea</h2>
+                <p>So pretty much I wanted to find out how many common words does the English song FAITH by MADKID have.
+                  So as a result, I implemented a word counter for songs in Java through the use of a Hashmap. That way
+                  I can finally know how certain words come up.
+                </p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="right">
+                <h2>Implementation</h2>
+                <p>Hashmaps make it easy to know where to locate values 
+                  based on keys and it allows for easy insertion/deletion, despite the lack of order. Figured, I don't need any need of sorting, just word frequency. So HashMaps make it one less problem for me. It also helps when a data is identified with a key pair, which in my case is just the frequency. Cool right?!</p>
+                <p>In the future I might add a GUI interface and make it look good for the average person. I could implement APIs that would call automatic extraction of lyrics based on a user's input of a song and they can search for it in a database. As for the website, add Frameworks and more Javascript to make it even more impressive!</p>
+              </div>
+           </div>
+            <div class="container left">
+              <div class="left">
+                <h2>The Song</h2>
+                <p>FAITH is pretty much the second theme song to the second opening of The Rising of the Shield Hero anime I watched a while back. So I figured why not? It was really catchy and a good and inspirational beat with their other song RISE. The song was a hit in Japan and the anime is a hit from a few months back.  Some words like "faith", "never", and "silent" really weren't that suprising (I do listen to this song 100 times a day after all). But it was crazy to see the words, "millions", "hundreds", and "change"pop up the most. These guys really love numbers. But it does make sense about a song about sheer determination. One of their chorus has this verse, "In the distorted world, following the footsteps, suppress the silent shout, hundreds of times, even,millions of times, I find & Create myself, now or never." See? These guys don't give up.</p>
+                <iframe width="500" height="400" src="https://www.youtube.com/embed/A0iJkPbU7yA" allowfullscreen> </iframe>
+            </div>
+      </section>
+
+    <script>
+      $('.fullBackground').fullClip({
+        //Images are from Reddit/pixiv Use for non-commerical purposes
+        images: ['img/2.png', 'img/3.png'],
+        transitionTime: 3500,
+        wait: 4000
+      });
+      </script>           
+    </body>
+</html>
